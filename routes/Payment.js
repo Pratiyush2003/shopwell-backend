@@ -18,8 +18,8 @@ router.post("/checkout", async (req, res) => {
                 },
                 quantity: item.quantity
             })),
-            success_url: "https://shopwell-frontend-k6h9.vercel.app/Success",
-            cancel_url: "https://shopwell-frontend-k6h9.vercel.app/failed"
+            success_url: "https://shopwell-frontend.vercel.app/Success",
+            cancel_url: "https://shopwell-frontend.vercel.app/failed"
         });
         res.json({ url: session.url });
     } catch (error) {
